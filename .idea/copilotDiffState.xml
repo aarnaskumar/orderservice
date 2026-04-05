@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/SSH_KEY_SETUP.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/SSH_KEY_SETUP.md" />
+              <option name="updatedContent" value="# SSH Key Setup Complete ✅&#10;&#10;## Generated SSH Keys&#10;&#10;SSH keys have been successfully generated and stored in your `.ssh` directory.&#10;&#10;### Location&#10;```&#10;C:\Users\pc\.ssh&#10;```&#10;&#10;### Files&#10;- **id_rsa** (3,389 bytes) - Private key (keep this secret!)&#10;- **id_rsa.pub** (746 bytes) - Public key (share this with GitHub)&#10;&#10;### Key Details&#10;- **Type**: RSA 4096-bit&#10;- **Comment**: orderservice@github&#10;- **Fingerprint**: SHA256:ZsXMwYHsM4ww4iYAtqgkMlqWCNfupTqF7TKHNwePtV4&#10;&#10;## Next Steps: Add Public Key to GitHub&#10;&#10;1. **Copy the public key**:&#10;   ```powershell&#10;   Get-Content C:\Users\pc\.ssh\id_rsa.pub | Set-Clipboard&#10;   ```&#10;&#10;2. **Go to GitHub**:&#10;   - Visit https://github.com/settings/keys&#10;   - Click &quot;New SSH key&quot;&#10;&#10;3. **Add the key**:&#10;   - Title: &quot;OrderService Development&quot;&#10;   - Key: Paste the content from your clipboard&#10;   - Click &quot;Add SSH key&quot;&#10;&#10;4. **Verify SSH connection**:&#10;   ```bash&#10;   ssh -T git@github.com&#10;   ```&#10;   You should see: `Hi username! You've successfully authenticated...`&#10;&#10;## Using SSH with Git Push&#10;&#10;Once the key is added to GitHub, use SSH URLs for git operations:&#10;&#10;```bash&#10;git remote set-url origin git@github.com:aarnaskumar/orderservice.git&#10;git push -u origin main&#10;```&#10;&#10;## Files in .ssh Directory&#10;- `id_rsa` - Your private key (never share this!)&#10;- `id_rsa.pub` - Your public key (share with GitHub)&#10;- `known_hosts` - (auto-generated) List of known servers&#10;&#10;## Security Notes&#10;⚠️ **Important**:&#10;- Never commit your private key (`id_rsa`) to version control&#10;- Keep your private key secure and confidential&#10;- The `.gitignore` file should exclude `.ssh` directory&#10;- If you suspect your key is compromised, regenerate it immediately&#10;&#10;## References&#10;- [GitHub SSH Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)&#10;- [SSH Key Generation Guide](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)&#10;&#10;---&#10;&#10;Generated: April 5, 2026&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
